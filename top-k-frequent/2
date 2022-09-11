@@ -1,0 +1,13 @@
+from typing import List
+from collections import Counter
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        count = Counter(nums)
+        print(count)
+        return [elem for elem in count.keys()][0:k]
+
+sol = Solution()
+print(sol.topKFrequent([3, 0, 1, 0], 2))
+        
+
